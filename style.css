@@ -8,16 +8,33 @@
     src: url("Fonts/simplifica.ttf");
 }
 
+html,body{ margin:0; padding:0; height:100%; width:100%; }
+h1{
+  position: relative;
+  font-family: Simplifica;
+  font-size: 5vw;
+  color: white;
+  display: block;
+  text-align: center;
+  margin-top: 0px;
+}
+
+p{
+  position: relative;
+  font-family: Simplifica;
+  font-size: 24px;
+  color: white;
+  text-align: left;
+}
+
 /*===================NAVIGATION BAR===============*/
 .topnavbar {
  font-family: Munich Sans;
- margin-left: -15px;
- margin-right: -15px;
  overflow: hidden;
  background-color: #333;
  position: fixed; /* Set the navbar to fixed position */
  top: 0; /* Position the navbar at the top of the page */
- width: 105%; /* Full width */
+ width: 100%; /* Full width */
  box-shadow: 0 8px 4px -4px rgba(0,0,0,.2);
  z-index: 500;
 }
@@ -42,22 +59,24 @@
   /*Source*/
   background-image: url("bgparallax.jpg");
   /*Move margin, make image wider, set min height*/
-  min-height: 750px;
-  width: 110%;
-  margin-left: -15px;
+  min-height: 900px;
+  width: 100%;
+  max-height: 100vh;
   /*Parallax scrolling effect*/
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
 }
 .bgcenteredtext {
   position: absolute;
   font-family: Munich Sans;
-  font-size: 125px;
+  font-size: 10vw;
   color: white;
   text-shadow: 1px 1px 1px #000, 3px 3px 5px black;
   top: 50%;
+  display: block;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -67,12 +86,13 @@
 .bgcenteredsubtext {
   position: absolute;
   font-family: Simplifica;
-  font-size: 50px;
+  font-size: 3vw;
   color: white;
   text-shadow: 1px 1px 1px #000, 3px 3px 5px black;
   top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 @keyframes reveal {
@@ -89,4 +109,52 @@
   }
 }
 
-  /*===================BACKGROUND PARALLAX IMAGE AND LANDING===============*/
+.links {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-filter: drop-shadow(3px 3px 5px #222);
+  filter: drop-shadow(3px 3px 5px #222);
+}
+
+#full-size{
+  height:100%;
+  width:100%;
+}
+  /*===================INTRODUCTION===============*/
+
+.introduction, .introbody{
+  background-color: #333333;
+  padding-top: 25px;
+}
+
+#intropicture {
+  position:relative;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  width:20vw;
+  height:20vw;
+  border-radius:50%;
+}
+
+.introbody{
+  padding-top: 200px;
+  margin-top:-55px;
+  padding-bottom: 400px;
+}
+
+.intropicture{
+  float:left;
+
+  width: 25%;
+}
+
+.introtext{
+  float:right;
+  margin-top: -100px;
+  width: 75%;
+}
