@@ -1,0 +1,304 @@
+@font-face {
+    font-family: "Munich Sans";
+    src: url("Fonts/munich-sans.ttf");
+}
+
+@font-face {
+    font-family: "Simplifica";
+    src: url("Fonts/simplifica.ttf");
+}
+
+html,body{ margin:0; padding:0; height:100%; width:100%;scroll-behavior: smooth;
+}
+h1{
+  position: relative;
+  font-family: Simplifica;
+  font-size: 60px;
+  color: white;
+  display: block;
+  text-align: center;
+  margin-top: 0px;
+  text-decoration: underline;
+  text-decoration-color: orange;
+}
+
+h2{
+  position: relative;
+  font-family: Simplifica;
+  font-size: 60px;
+  color: black;
+  display: block;
+  text-align: center;
+  margin-top: 0px;
+  text-decoration: underline;
+  text-decoration-color: orange;
+}
+
+h3{
+  position: relative;
+  font-family: Munich Sans;
+  font-size: 40px;
+  color: #A9A9A9;
+  display: block;
+  text-align: center;
+  margin-top: 0px;
+  text-decoration: underline;
+  text-decoration-color: orange;
+}
+
+/*===================NAVIGATION BAR===============*/
+.topnavbar {
+ font-family: Munich Sans;
+ overflow: hidden;
+ background-color: #333;
+ position: fixed; /* Set the navbar to fixed position */
+ top: 0; /* Position the navbar at the top of the page */
+ width: 100%; /* Full width */
+ box-shadow: 0 8px 4px -4px rgba(0,0,0,.2);
+ z-index: 500;
+}
+
+/* Links inside the navbar */
+.topnavbar a {
+ float: left;
+ display: block;
+ color: #f2f2f2;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.topnavbar a:hover {
+ background: #ddd;
+ color: black;
+}
+/*===================BACKGROUND PARALLAX IMAGE AND LANDING===============*/
+.bgparallax {
+  /*Source*/
+  background-image: url("bgparallax.jpg");
+  /*Move margin, make image wider, set min height*/
+  min-height: 900px;
+  width: 100%;
+  max-height: 100vh;
+  /*Parallax scrolling effect*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+.bgcenteredtext {
+  position: absolute;
+  font-family: Munich Sans;
+  font-size: 10vw;
+  color: white;
+  text-shadow: 1px 1px 1px #000, 3px 3px 5px black;
+  top: 50%;
+  display: block;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  animation: reveal 3000ms ease-in-out forwards 200ms,
+             glow 2500ms linear infinite 2000ms;
+}
+.bgcenteredsubtext {
+  position: absolute;
+  font-family: Simplifica;
+  font-size: 3vw;
+  color: white;
+  text-shadow: 1px 1px 1px #000, 3px 3px 5px black;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@keyframes reveal {
+  80%{
+    letter-spacing: 20px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+
+.links {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-filter: drop-shadow(3px 3px 5px #222);
+  filter: drop-shadow(3px 3px 5px #222);
+}
+
+#full-size{
+  height:100%;
+  width:100%;
+}
+  /*===================INTRODUCTION===============*/
+
+.introduction{
+  background-color: #333333;
+  padding-top: 25px;
+  padding-bottom: 1px;
+}
+
+#intropicture {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introwrapper{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  background-color: #333333;
+  padding-bottom:50px;
+}
+
+.introleft{
+  width: 30%;
+  padding-bottom: 25px;
+}
+
+.introright{
+  width: 70%;
+  flex-basis: 70%;
+  padding-bottom: 25px;
+}
+
+.introbutton{
+  width:70%;
+  flex-basis: 70%;
+}
+
+@media (max-width: 767px){
+  .wrap {
+    flex-direction: column-reverse;
+  }
+  .introleft,
+  .introright,
+  .introbutton{
+    width: auto;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+  }
+}
+
+#introbutton{
+  background-color: #FF8C00;
+  padding: 15px 25px;
+  font-size: 30px;
+  font-family: Simplifica;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border: none;
+  box-shadow: 0 9px #999;
+  transition: 0.3s;
+}
+
+#introbutton:hover {background-color: #C0500C}
+
+#introbutton:active {
+  background-color: #C0500C;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.introbodyformat{
+  position: relative;
+  font-family: Simplifica;
+  font-size: 30px;
+  color: white;
+  text-align: left;
+}
+
+  /*===================SKILLS===============*/
+  .skills{
+    padding-top: 25px;
+  }
+
+  #skillspicture {
+    height:400px;
+    width: 10px;
+    border-radius:50%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .skillsleft{
+    width: 35%;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+  }
+
+  .skillsright{
+    width: 35%;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-align: left;
+  }
+
+  .skillsmiddle{
+    width: 5%;
+    flex-basis: 10%;
+    padding-bottom: 25px;
+    text-align: left;
+  }
+
+  .skillsbodyformat{
+    position: relative;
+    font-family: Simplifica;
+    font-size: 30px;
+    color: black;
+    text-align: left;
+  }
+
+  .skillswrapper{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    padding-bottom:50px;
+    margin: 0 auto;
+
+  }
+
+  @media (max-width: 767px){
+    .wrap {
+      flex-direction: column-reverse;
+    }
+    .skillsleft,
+    .skillsright{
+      width: auto;
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+
+    }
+    .skillsmiddle{
+      visibility: hidden;
+      display: none;
+      opacity: 0;
+    }
+  }
