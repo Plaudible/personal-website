@@ -54,6 +54,7 @@ h3{
  position: fixed;
  top: 0;
  width: 100%;
+ height:auto;
  box-shadow: 0 8px 4px -4px rgba(0,0,0,.2);
  z-index: 500;
 }
@@ -85,29 +86,26 @@ h3{
   object-fit: cover;
 }
 .bgcenteredtext {
-  position: absolute;
+  padding-top: 250px;
+  position: relative;
   font-family: Munich Sans;
   font-size: 10vw;
   color: white;
   text-shadow: 1px 1px 1px #000, 3px 3px 5px black;
-  top: 50%;
   display: block;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
   animation: reveal 3000ms ease-in-out forwards 200ms,
              glow 2500ms linear infinite 2000ms;
 }
 .bgcenteredsubtext {
-  position: absolute;
+  position: relative;
   font-family: Simplifica;
   font-size: 3vw;
   color: white;
   text-shadow: 1px 1px 1px #000, 3px 3px 5px black;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display:block;
   text-align: center;
+  padding-bottom: 25px;
 }
 
 @keyframes reveal {
@@ -125,10 +123,9 @@ h3{
 }
 
 .links {
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display:block;
+  text-align: center;
+  position: relative;
   -webkit-filter: drop-shadow(3px 3px 5px #222);
   filter: drop-shadow(3px 3px 5px #222);
 }
