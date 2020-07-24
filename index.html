@@ -1,5 +1,5 @@
 
-<!--This website was made from scratch using HTML/CSS, my third attempt at steering away from WYSIWYG. Name animation code sourced from FreeFrontend (https://freefrontend.com/css-text-animations/).-->
+<!--This website was made from scratch using purely HTML/CSS, my third attempt at steering away from WYSIWYG. Name animation code sourced from FreeFrontend (https://freefrontend.com/css-text-animations/).-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,10 +7,9 @@
 </head>
 <body>
    <div class="topnavbar"> <!-- Navigation bar -->
-      <a class="active" href="#intro">Introduction</a>
+      <a href="#introduction">Introduction</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#work">Work</a>
       <a href="#contact">Contact</a>
    </div>
    <div class="bgparallax", id="fullsize">
@@ -18,49 +17,108 @@
      <div class="bgcenteredsubtext">Computer Science Student & Software Developer</div>
      <div class="links">
        <a href="https://github.com/plaudible">
-         <img src="Images/github.png" alt="HTML tutorial" style="width:42px;height:42px;padding-right:10px;">
+         <img src="Images/github.png" style="width:42px;height:42px;padding-right:10px;">
       </a><b> ‎‎‎‎</b>
       <a href="https://www.linkedin.com/in/maxwell-bockmann-601927151/">
-        <img src="Images/linkedin.png" alt="HTML tutorial" style="width:42px;height:42px;padding-left:10px;padding-right:10px;">
+        <img src="Images/linkedin.png"style="width:42px;height:42px;padding-left:10px;padding-right:10px;">
       </a><b> ‎‎‎‎</b>
       <a href="https://www.instagram.com/plaudible/?hl=en">
-        <img src="Images/instagram.png" alt="HTML tutorial" style="width:42px;height:42px;padding-left:10px;">
+        <img src="Images/instagram.png" style="width:42px;height:42px;padding-left:10px;">
      </a>
      </div>
   </div>
-  <div class="introduction">
+  <div class="introduction" id = "introduction">
     <h1>INTRODUCTION</h1>
   </div>
   <div class="introwrapper">
     <div class="introleft"><img src="Images/me.jpg" alt="HTML tutorial" id="intropicture"></div>
     <div class="introright">
       <span class="introbodyformat">Hello! My name is Maxwell Bockmann, I'm currently a computer science undergraduate at Syracuse University pursuing a career as a software developer.
-      I got my start programming through making websites and simple Java games in high school. I'm continuing my growth by expanding into storyboarding in C# and coding in Java, and playing around with Python scripts and Unity in my free time. Attached below is my resume!</span>
+      I got my start programming through making websites and simple Java games in high school. I'm continuing my growth by expanding into storyboarding in C# and coding in Java, and playing around with Python scripts, Android app development and Unity in my free time. Attached below is my resume!</span>
     </div>
     <div class ="introbutton"><button type="button" onclick="window.open('Files/resume.pdf')"id="introbutton">Download</button></div>
   </div>
-  <div class="skills">
+  <div class="skills" id = "skills">
     <h2>SKILLS</h2>
   </div>
   <div class="skillswrapper">
     <div class="skillsleft">
       <h3>Technical Skills</h3>
       <ul class = "skillsbodyformat">
-        <li>Academic and personal knowledge of Java, C#, Haskell, and HTML/CSS.</li>
-        <li>Personal experience with C, C++, Python, and Unity.</li>
-        <li>Personal experience using version control software like Git and Bitbucket.</li>
-        <li>Completed courses related to algorithms, data mining, algorithms and data structures. </li>
+        <li>Academic and personal knowledge of Java, Python, C#, Haskell, and HTML/CSS.</li>
+        <li>Academic and personal experience engaging with the agile development methodology as both a scrum master and team member, planning and doing task-level tracking for daily meetings both in-person and virtually.</li>
+        <li>Academic and personal experience using version control software like Git and Bitbucket.</li>
+        <li>Personal experience with C, C++, and Unity.</li>
+        <li>Completed courses related to data mining, web systems architecture & programming, access control, and cryptography. </li>
       </ul>
    </div>
     <div class="skillsmiddle"><img src="Images/bar.png" alt="HTML tutorial" id="skillspicture"></div>
     <div class="skillsright">
       <h3>Other Skills</h3>
       <ul class = "skillsbodyformat">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Coca Cola</li>
+        <li>Professional experience with task-management, client communication, and quality assurance.</li>
+        <li>Professional experience diagnosing issues related to Windows, MacOS, iOS and Android devices, including malware removal, OS installation, software installation, data backup & recovery, and hardware assistance. </li>
+        <li>Professional experience with performing CATV & ethernet testing and maintenance and repairing/replacing wireless access point and network switches.</li>
+        <li>Personal experience with video editing/recording software including OBS and Davinci Resolve, and Adobe editing software including InDesign, Illustrator, and Photoshop.</li>
       </ul>
     </div>
+  </div>
+  <div class="projects" id="projects">
+    <h1>PROJECTS</h1>
+  </div>
+  <div class="projectswrapper">
+    <div class="projectsindiv"><img src="Images/storyboards.gif" class="projectsimage">
+      <div class="projectsoverlay">
+        <div class="projectstext">
+          <h1>Storyboards</h1>
+          I developed/modified scripts in C# to create animations that serve as background visuals for game levels.
+          <div class="projectsbuttonwrapper"><button id="projectsbuttons" onclick="location.href='https://github.com/Plaudible/storyboards'" type="button">GitHub</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="projectsindiv"><img src="Images/lazybot.jpg" class="projectsimage">
+        <div class="projectsoverlay">
+          <div class="projectstext">
+            <h1>Cusehacks Lazybot</h1>
+            Reddit bot using facial recognition Python scripts, demo on GitHub.
+            <div class="projectsbuttonwrapper"><button id="projectsbuttons" onclick="location.href='https://github.com/Plaudible/lazybot'" type="button">GitHub</button></div>
+          </div>
+        </div>
+    </div>
+    <div class="projectsindiv"><img src="Images/ehr.jpg" class="projectsimage">
+        <div class="projectsoverlay">
+          <div class="projectstext">
+            <h1>EHR4Kids</h1>
+            Website developed with a team to digitalize children's health records for a non-profit organization.
+            <div class="projectsbuttonwrapper"><button id="projectsbuttons" onclick="location.href='https://www.youtube.com/watch?v=Y2DE3AUJ3cw'" type="button">Demo</button></div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="projectswrapper">
+    <div class="projectsindiv"><img src="Images/website.jpg" class="projectsimage">
+      <div class="projectsoverlay">
+        <div class="projectstext">
+          <h1>This!</h1>
+          This website was a fun side project, made from scratch with no WYSIWYG editors.
+          <div class="projectsbuttonwrapper"><button id="projectsbuttons" onclick="location.href='https://github.com/Plaudible/personal-website'" type="button">GitHub</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="projectsindiv"><img src="Images/more.png" class="projectsimage">
+      <div class="projectsoverlay">
+        <div class="projectstext">
+          <h1>...</h1>
+          And more to come, very soon!
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact" id = "contact">
+     <h2>CONTACT</h2>
+  </div>
+  <div class="contactwrapper">
+    <div class="contacttext">Maxwell William Hans Bockmann ✦ Phone: 551-404-1452 ✦ E-mail: maxwellbockmann@gmail.com</div>
   </div>
 </body>
 </html>

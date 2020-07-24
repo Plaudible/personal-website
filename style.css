@@ -51,14 +51,13 @@ h3{
  font-family: Munich Sans;
  overflow: hidden;
  background-color: #333;
- position: fixed; /* Set the navbar to fixed position */
- top: 0; /* Position the navbar at the top of the page */
- width: 100%; /* Full width */
+ position: fixed;
+ top: 0;
+ width: 100%;
  box-shadow: 0 8px 4px -4px rgba(0,0,0,.2);
  z-index: 500;
 }
 
-/* Links inside the navbar */
 .topnavbar a {
  float: left;
  display: block;
@@ -68,7 +67,6 @@ h3{
  text-decoration: none;
 }
 
-/* Change background on mouse-over */
 .topnavbar a:hover {
  background: #ddd;
  color: black;
@@ -77,11 +75,9 @@ h3{
 .bgparallax {
   /*Source*/
   background-image: url("bgparallax.jpg");
-  /*Move margin, make image wider, set min height*/
   min-height: 900px;
   width: 100%;
   max-height: 100vh;
-  /*Parallax scrolling effect*/
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -201,7 +197,7 @@ h3{
 }
 
 #introbutton{
-  background-color: #FF8C00;
+  background-color: #ff4d01;
   padding: 15px 25px;
   font-size: 30px;
   font-family: Simplifica;
@@ -302,3 +298,103 @@ h3{
       opacity: 0;
     }
   }
+
+    /*===================PROJECtS==============*/
+.projects{
+  background-color: #333333;
+  padding-top: 25px;
+  padding-bottom: 1px;
+}
+.projectswrapper{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #333333;
+  padding-bottom:50px;
+}
+
+.projectsindiv {
+  position: relative;
+  width: 250px;
+  height: 375px;
+  margin: 25px;
+}
+
+.projectsimage {
+  display: block;
+  width: 250px;
+  height: 375px;
+}
+
+.projectsoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: orange;
+}
+
+.projectsindiv:hover .projectsoverlay {
+  opacity: 0.95;
+}
+
+.projectstext {
+  color: white;
+  font-size: 23px;
+  font-family: Simplifica;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.projectsbuttonwrapper{
+  padding-top:25px;
+}
+
+#projectsbuttons{
+  background-color: #ff4d01;
+  padding: 15px 25px;
+  font-size: 25px;
+  font-family: Simplifica;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border: none;
+  box-shadow: 0 9px #999;
+  transition: 0.3s;
+}
+
+#projectsbuttons:hover {background-color: #C0500C}
+
+#projectsbuttons:active {
+  background-color: #C0500C;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+    /*===================CONTACT==============*/
+    .contact{
+      background-color: white;
+      padding-top: 25px;
+    }
+    .contacttext {
+      color: black;
+      font-size: 23px;
+      font-family: Simplifica;
+      font-weight: bold;
+      position: relative;
+      text-align: center;
+      justify-content: center;
+      padding-bottom: 50px;
+    }
